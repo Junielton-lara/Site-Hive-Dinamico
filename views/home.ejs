@@ -11,66 +11,134 @@
 </head>
 <body>
     <header>
-
         <span>
-            <img class="logo" src="../../img/icones/Logo teste.png">
+            <img src="../../img/icones/Logo teste.png">
         </span>
-
-        <span class="buscar">
-            <form class="formulario">
-                <input type="search" placeholder="Buscar">
-            </form>
+            
+        <span class="busca">
+            <input type="search" placeholder="Buscar">
         </span>
-
-        <nav class="menu">
+            
+        <span>
             <ul>
-                <li><a href="/home"><img src="../../img/icones/Home Icon.png"></a></li>
-                <li><a><img src="../../img/icones/Chat Icon.png"></a></li>
+                <li><a href="home.html"><img src="../../img/icones/Home Icon.png"></a></li>
+                <li><a href=""><img src="../../img/icones/Chat Icon.png"></a></li>
                 <li><a href="/perfil"><img src="../../img/icones/Profile Icon.png"></a></li>
                 <li><a href="/"><img src="../../img/icones/Sair Icon.png"></a></li>
             </ul>
-        </nav>
-
+        </span>
     </header>
 
     <main>
 
-        <section class="conteudo">
-            <div class="card-publi">
-                <span class="nome-usuario">Felpss00</span>
-                <img src="../../img/publi/post1.png">
-                <div class="card-conteudo">
-                    <span class="card-descri">Por do sol no Gta V, Um jogo realemnte  muito bonito, mesmo ele sendo de 2013...</span>
+            <div class="publi">
+                <div class="card-publi">
+                    <span class="nome-usuario"><%= publi.autor%> </span>
+                    <img src="../../img/publi/<%= publi.post%>">
+                    <div class="card-conteudo">
+                        <span class="card-descri"> <%= publi.descricao %>   </span>
+                    </div>
+                    <div class="comentarios">
+                        <div>
+                            <span class="perfil">Felpss00</span>
+                            <span>Daleeeeee</span>
+                        </div>
+                        <div>
+                            <span class="perfil">Kaduzeira</span>
+                            <span>O mais Brabooooooooo</span>
+                        </div>
+                        <div>
+                            <span class="perfil">DaviSilva</span>
+                            <span>O menino é experiente</span>
+                        </div>
+                    </div>
+                    <div class="comentar">
+                        <input type="text" placeholder="Adicione um comentário...">
+                        <button type="submit" class="enviar">Publicar</button>
+                    </div>
+                </div>
+    
+                <div class="card-publi">
+                    <span class="nome-usuario"> <%= publi.autor2%> </span>
+                    <img src="../../img/publi/<%= publi.post2%>">
+                    <div class="card-conteudo">
+                        <span class="card-descri"> <%= publi.descricao2 %> </span>
+                    </div>
+                    <div class="comentarios">
+                        <div>
+                            <span class="perfil">Felpss00</span>
+                            <span>Daleeeeee</span>
+                        </div>
+                        <div>
+                            <span class="perfil">Kaduzeira</span>
+                            <span>O mais Brabooooooooo</span>
+                        </div>
+                        <div>
+                            <span class="perfil">DaviSilva</span>
+                            <span>O menino é experiente</span>
+                        </div>
+                    </div>
+                    <div class="comentar">
+                        <input type="text" placeholder="Adicione um comentário...">
+                        <button type="submit" class="enviar">Publicar</button>
+                    </div>
+                </div>
+    
+                <div class="card-publi">
+                    <span class="nome-usuario"><%= publi.autor3%></span>
+                    <img src="../../img/publi/<%= publi.post3%>">
+                    <div class="card-conteudo">
+                        <span class="card-descri"> <%= publi.descricao3 %> </span>
+                    </div>
+                    <div class="comentarios">
+                        <div>
+                            <span class="perfil">Felpss00</span>
+                            <span>Daleeeeee</span>
+                        </div>
+                        <div>
+                            <span class="perfil">Kaduzeira</span>
+                            <span>O mais Brabooooooooo</span>
+                        </div>
+                        <div>
+                            <span class="perfil">DaviSilva</span>
+                            <span>O menino é experiente</span>
+                        </div>
+                    </div>
+                    <div class="comentar">
+                        <input type="text" placeholder="Adicione um comentário...">
+                        <button type="submit" class="enviar">Publicar</button>
+                    </div>
+                </div>
+    
+                <div class="card-publi">
+                    <span class="nome-usuario"><%= publi.autor4%></span>
+                    <img src="../../img/publi/<%= publi.post4%>">
+                    <div class="card-conteudo">
+                        <span class="card-descri"> <%= publi.descricao3 %> </span>
+                    </div>
+                    <div class="comentarios">
+                        <div>
+                            <span class="perfil">Felpss00</span>
+                            <span>Daleeeeee</span>
+                        </div>
+                        <div>
+                            <span class="perfil">Kaduzeira</span>
+                            <span>O mais Brabooooooooo</span>
+                        </div>
+                        <div>
+                            <span class="perfil">DaviSilva</span>
+                            <span>O menino é experiente</span>
+                        </div>
+                    </div>
+                    <div class="comentar">
+                        <input type="text" placeholder="Adicione um comentário...">
+                        <button type="submit" class="enviar">Publicar</button>
+                    </div>
                 </div>
             </div>
 
-            <div class="card-publi">
-                <span class="nome-usuario">Alionxx</span>
-                <img src="../../img/publi/post2.png">
-                <div class="card-conteudo">
-                    <span class="card-descri">OVO exprodi a lua garaiii. Easter egg Der Eisendrache, CHECK!!!!!</span>
-                </div>
-            </div>
-
-            <div class="card-publi">
-                <span class="nome-usuario">Skell</span>
-                <img src="../../img/publi/post3.png">
-                <div class="card-conteudo">
-                    <span class="card-descri">Um pouco do que é Night City, tirando os bugs o jogo é otimo e MUUUITO bonito graficamente.</span>
-                </div>
-            </div>
-
-            <div class="card-publi">
-                <span class="nome-usuario">Kayn</span>
-                <img src="../../img/publi/post4.png">
-                <div class="card-conteudo">
-                    <span class="card-descri">Pai ta global GARAIIIIIIIIIII!!!!!</span>
-                </div>
-            </div>
-
-        </section>
-
-        <section class="canais">
+         <section class="canais">
+        <aside >
             <h1>Videos Recomendados</h1>
             <div class="card-video">
                 <span class="nome-canal">fallenINSIDER</span>
@@ -88,10 +156,9 @@
                 <span class="nome-canal">Hayashii</span>
                 <a href="https://www.youtube.com/watch?v=HbASi1Kk7CA"><img src="../../img/publi/ex-canais4.png"></a>
             </div>
-            
-            
 
-        </section>
+        </aside>
+    </section>  
     </main>
     
 </body>

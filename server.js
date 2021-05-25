@@ -21,9 +21,12 @@ app.get("/", (req, res) => {
 
 
 //*****************Home****************************
+
+let posts = require("./Dados/postHome.json");
+
 app.get("/home", (req, res) => {
   //res.sendFile(path.join(__dirname, "./static/html/home/home.html"));
-  res.render("home.ejs");
+  res.render("home.ejs", { publi: posts });
 });
 
 

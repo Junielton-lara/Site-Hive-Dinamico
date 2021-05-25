@@ -16,30 +16,25 @@ header
     width: 100%;
 }
 
-img.logo
+header span
 {
-    height: 60px;
-}
-
-nav img
-{
-    height: 35px;
-}
-
-nav{
-    float: right;
     width: 100%;
 }
 
-nav ul{
+header img, ul, li
+{
+    height: 45px;
+    display: flex;
+}
+
+header ul
+{
     float: right;
 }
 
-nav li{
-    font-size: 12px;
-    display: inline-block;
+header li
+{
     margin-left: 20px;
-    margin-top: 10px;
 }
 
 input[type=search]
@@ -57,20 +52,45 @@ input[type=search]
     
 }
 
-span
-{
-    width: 100%;
-}
-
-span form
-{
-    text-align: center;
+input[type=text]
+{ 
+    width:90%;
+    height: 30px;
+    background: #191c1f;
+    color: #cccccc;
+    border: hidden;
 }
 
 main
 {
+    margin-top: 15px;
+}
+.enviar
+{
+    background: #191c1f;
+    color: #cccccc;
+    border: 0px;
+    height: 30px;
+    cursor: pointer;
+}
+.comentar
+{  
+    border-top: 1px solid rgb(137, 144, 149);
+    margin-top: 5px;
+    text-align: center;
+    padding: 5px;
+}
+.comentarios
+{
+    display: inline-block;
+}
+.busca
+{
+    text-align: center;
+}
+main
+{
     display: flex;
-    margin-top: 25px;
 }
 
 .conteudo
@@ -168,8 +188,632 @@ div.card-video
     color: gainsboro;
 }
 
+  .publi
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+div.card-publi
+{
+    margin: 10px;
+    max-width: 900px;
+    background: #191c1f;
+    box-shadow: 0px 1px 2px 1px rgb(74, 75, 77);
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-publi img
+{
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    width: 900px;
+    height: 506px;
+
+}
+
+span.nome-usuario
+{
+    padding:15px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+div.card-conteudo
+{
+    padding: 25px;
+}
+
+span.card-descri
+{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal
+}
 
 
+.canais
+{
+    float: right;
+    width: 15%;
+    display: block;
+}
+
+div.card-video
+{
+    margin: 10px;
+    background: #191c1f;
+    box-shadow: 0px 1px 2px 1px rgb(74, 75, 77);
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.canais h1
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.card-video img
+{
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+
+
+.nome-canal
+{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: gainsboro;
+}
+.comentarios div
+{
+    margin-bottom: 5px;
+}
+
+.perfil
+{
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 35px;
+    margin-right: 10px;
+
+}
+
+
+@media screen and (min-width: 750px) and (max-width: 1366px) 
+{
+    header span
+{
+    width: 100%;
+}
+
+header img, ul, li
+{
+    height: 45px;
+    display: inline;
+}
+
+header ul
+{
+    float: right;
+}
+.busca
+{
+    text-align: center;
+}
+
+    input[type=search]
+{ 
+    width: 100px;
+    height: 25px;  
+}
+
+.publi
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+div.card-publi
+{
+    margin: 10px;
+    max-width: 750px;
+    background: #191c1f;
+    box-shadow: 0px 1px 2px 1px rgb(74, 75, 77);
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-publi img
+{
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    width: 750px;
+    height: auto;
+
+}
+
+span.nome-usuario
+{
+    padding:15px;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+
+div.card-conteudo
+{
+    padding: 25px;
+}
+
+span.card-descri
+{
+    font-size: 16px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: normal
+}
+
+
+.canais
+{
+    float: right;
+    width: 15%;
+    display: block;
+}
+
+div.card-video
+{
+    margin: 10px;
+    background: #191c1f;
+    box-shadow: 0px 1px 2px 1px rgb(74, 75, 77);
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+}
+
+}
+
+@media screen and (min-width: 500px) and (max-width: 1000px) 
+{
+    header span
+{
+    width: 100%;
+}
+
+header img, ul, li
+{
+    height: 26px;
+    display: inline;
+}
+
+header ul
+{
+    float: right;
+}
+.busca
+{
+    text-align: center;
+}
+
+    input[type=search]
+{ 
+    width: 100px;
+    height: 25px;  
+}
+
+.publi
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+div.card-publi
+{
+    margin: 10px;
+    max-width: 600px;
+    background: #191c1f;
+    box-shadow: 0px 1px 2px 1px rgb(74, 75, 77);
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-publi img
+{
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    width: 600px;
+    height: auto;
+
+}
+
+span.nome-usuario
+{
+    padding:15px;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+
+div.card-conteudo
+{
+    padding: 25px;
+}
+
+span.card-descri
+{
+    font-size: 16px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: normal
+}
+
+
+.canais
+{
+    float: right;
+    width: 15%;
+    display: block;
+}
+
+div.card-video
+{
+    margin: 10px;
+    background: #191c1f;
+    box-shadow: 0px 1px 2px 1px rgb(74, 75, 77);
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+}
+aside
+{
+    display: none;
+}
+
+}
+
+@media screen and (min-width: 416px) and (max-width: 600px) 
+{
+    header span
+{
+    width: 100%;
+}
+
+header img, ul, li
+{
+    height: 18px;
+    display: inline;
+}
+
+header ul
+{
+    float: right;
+}
+
+header li
+{
+    margin-left: 2px;
+}
+.busca
+{
+    text-align: left;
+}
+
+    input[type=search]
+{ 
+    width: 70px;
+    height: 23px;  
+}
+
+.publi
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div.card-publi
+{
+    margin: 10px;
+    max-width: 410px;
+    background: #191c1f;
+    box-shadow: 0px 1px 2px 1px rgb(74, 75, 77);
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-publi img
+{
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    width: 410px;
+    height: auto;
+
+}
+
+span.nome-usuario
+{
+    padding:15px;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+
+div.card-conteudo
+{
+    padding: 25px;
+}
+
+span.card-descri
+{
+    font-size: 16px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: normal
+}
+
+
+.canais
+{
+    float: right;
+    width: 15%;
+    display: block;
+}
+
+div.card-video
+{
+    margin: 10px;
+    background: #191c1f;
+    box-shadow: 0px 1px 2px 1px rgb(74, 75, 77);
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+}
+
+aside
+{
+    display: none;
+}
+
+}
+
+@media screen and (max-width: 414px) 
+{
+    header span
+{
+    width: 100%;
+}
+
+header img, ul, li
+{
+    height: 18px;
+    display: inline;
+}
+
+header ul
+{
+    float: right;
+}
+
+header li
+{
+    margin-left: 3px;
+}
+.busca
+{
+    text-align: left;
+}
+
+    input[type=search]
+{ 
+    width: 70px;
+    height: 23px;  
+}
+
+.publi
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div.card-publi
+{
+    margin: 10px;
+    max-width: 310px;
+    background: #191c1f;
+    box-shadow: 0px 1px 2px 1px rgb(74, 75, 77);
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-publi img
+{
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    width: 310px;
+    height: auto;
+
+}
+
+span.nome-usuario
+{
+    padding:15px;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+
+div.card-conteudo
+{
+    padding: 25px;
+}
+
+span.card-descri
+{
+    font-size: 16px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: normal
+}
+
+
+.canais
+{
+    float: right;
+    width: 15%;
+    display: block;
+}
+
+div.card-video
+{
+    margin: 10px;
+    background: #191c1f;
+    box-shadow: 0px 1px 2px 1px rgb(74, 75, 77);
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+}
+
+aside
+{
+    display: none;
+}
+
+}
+
+@media screen and (max-width: 288px) 
+{
+    header span
+{
+    width: 100%;
+}
+
+header img, ul, li
+{
+    height: 13px;
+    display: inline;
+}
+
+header ul
+{
+    float: right;
+}
+
+header li
+{
+    margin-left: 1px;
+}
+.busca
+{
+    text-align: left;
+}
+
+    input[type=search]
+{ 
+    width: 80px;
+    height: 18px;  
+}
+
+.publi
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div.card-publi
+{
+    margin: 10px;
+    max-width: 210px;
+    background: #191c1f;
+    box-shadow: 0px 1px 2px 1px rgb(74, 75, 77);
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-publi img
+{
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    width: 210px;
+    height: auto;
+
+}
+
+span.nome-usuario
+{
+    padding:15px;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+
+div.card-conteudo
+{
+    padding: 25px;
+}
+
+span.card-descri
+{
+    font-size: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: normal
+}
+
+
+.canais
+{
+    float: right;
+    width: 15%;
+    display: block;
+}
+
+div.card-video
+{
+    margin: 10px;
+    background: #191c1f;
+    box-shadow: 0px 1px 2px 1px rgb(74, 75, 77);
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+}
+
+aside
+{
+    display: none;
+}
+
+}
 
 
 
